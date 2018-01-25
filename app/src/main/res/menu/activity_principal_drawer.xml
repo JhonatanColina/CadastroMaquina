@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group  android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item android:title="@string/inicio">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/dashBoard"
+                        android:icon="@drawable/ic_dashboard"
+                        android:title="@string/menu_dashboard" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="@string/hintUsuario">
+            <menu
+                android:id="@+id/menuUsuario">
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/novoUsuario"
+                        android:icon="@drawable/ic_person_add"
+                        android:title="@string/menu_novoUsuario" />
+                    <item
+                        android:id="@+id/listaUsuario"
+                        android:icon="@drawable/ic_people"
+                        android:title="@string/menu_listarUsuario" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="@string/hintComputer">
+            <menu
+                android:id="@+id/menuMaquina">
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/novaMaquina"
+                        android:icon="@drawable/laptop"
+                        android:title="@string/menu_novaMaquina"/>
+                    <item
+                        android:id="@+id/listaMaquina"
+                        android:icon="@drawable/list"
+                        android:title="@string/menu_listaMaquina"/>
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="@string/informacoes">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/sobre"
+                        android:icon="@drawable/ic_info"
+                        android:title="@string/sobre" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/fazerLogoff"
+            android:icon="@drawable/logoff"
+            android:title="@string/logoff" />
+    </group>
+</menu>

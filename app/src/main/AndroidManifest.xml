@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.jhonatancolina.cadastromaquina">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/LoginPage" />
+        <activity
+            android:name=".ConfiguracoesActivity"
+            android:label="@string/configuracoes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PrincipalActivity"
+            android:label="@string/inicio"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ManterUsuarioActivity"
+            android:label="@string/menu_manterUsuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ManterMaquinaActivity"
+            android:label="@string/menu_manterMaquina"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>
